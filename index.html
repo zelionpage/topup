@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="id" data-theme="light">
+<html lang="id" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102b4e">
+  <meta name="theme-color" content="#070d18">
   <meta name="description" content="SkyGaming — top up game favoritmu dengan mudah, cepat, dan nyaman.">
   <title>SkyGaming — Top Up Game</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +12,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="SkyGaming beranda"><span class="brand-mark">S</span><span>Sky<span class="brand-blue">Gaming</span></span></a>
+    <a class="brand" href="index.html" aria-label="SkyGaming beranda">
+      <span class="brand-mark">S</span>
+      <span>Sky<span class="brand-blue">Gaming</span></span>
+    </a>
     <nav class="desktop-nav" aria-label="Navigasi utama">
       <a href="#games" data-id="Top Up" data-en="Top Up">Top Up</a>
       <a href="#how" data-id="Cara Order" data-en="How to Order">Cara Order</a>
@@ -23,7 +27,7 @@
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" id="langToggle" aria-label="Ubah Bahasa">🌐 <span id="langLabel">EN</span></button>
-      <button class="icon-btn" id="themeToggle" aria-label="Ubah Tema">🌙</button>
+      <button class="icon-btn" id="themeToggle" aria-label="Ubah Tema">☀️</button>
       <a class="nav-help" href="#contact" data-id="Butuh bantuan?" data-en="Need help?">Butuh bantuan?</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
     </div>
@@ -40,11 +44,20 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <span class="eyebrow"><span class="status-dot"></span> <span data-id="DIGITAL GAMING STORE" data-en="DIGITAL GAMING STORE">DIGITAL GAMING STORE</span></span>
-        <h1 data-id="Top up game favoritmu, &lt;span&gt;lebih simpel.&lt;/span&gt;" data-en="Top up your favorite games, &lt;span&gt;simpler.&lt;/span&gt;">Top up game favoritmu, <span>lebih simpel.</span></h1>
-        <p data-id="Temukan kebutuhan gaming kamu di satu tempat. Pilih game, tentukan nominal, lalu lanjutkan pesanan dengan mudah." data-en="Find your gaming needs in one place. Choose the game, select the amount, and proceed smoothly.">Temukan kebutuhan gaming kamu di satu tempat. Pilih game, tentukan nominal, lalu lanjutkan pesanan dengan mudah.</p>
+        <span class="eyebrow">
+          <span class="status-dot"></span> 
+          <span data-id="DIGITAL GAMING STORE" data-en="DIGITAL GAMING STORE">DIGITAL GAMING STORE</span>
+        </span>
+        <h1 data-id="Top up game favoritmu, &lt;span&gt;lebih simpel.&lt;/span&gt;" data-en="Top up your favorite games, &lt;span&gt;simpler.&lt;/span&gt;">
+          Top up game favoritmu, <span>lebih simpel.</span>
+        </h1>
+        <p data-id="Temukan kebutuhan gaming kamu di satu tempat. Pilih game, tentukan nominal, lalu lanjutkan pesanan dengan mudah." data-en="Find your gaming needs in one place. Choose the game, select the amount, and proceed smoothly.">
+          Temukan kebutuhan gaming kamu di satu tempat. Pilih game, tentukan nominal, lalu lanjutkan pesanan dengan mudah.
+        </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#games"><span data-id="Jelajahi game" data-en="Explore games">Jelajahi game</span> <span>→</span></a>
+          <a class="btn btn-primary" href="#games">
+            <span data-id="Jelajahi game" data-en="Explore games">Jelajahi game</span> <span>→</span>
+          </a>
           <a class="btn btn-quiet" href="#how" data-id="Cara order" data-en="How to order">Cara order</a>
         </div>
         <div class="trust-row">
@@ -54,8 +67,12 @@
         </div>
       </div>
       <div class="hero-panel" aria-label="Ilustrasi promosi SkyGaming">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="panel-top"><span class="mini-label">SKYGAMING STORE</span><span class="live-pill">● ONLINE</span></div>
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="panel-top">
+          <span class="mini-label">SKYGAMING STORE</span>
+          <span class="live-pill">● ONLINE</span>
+        </div>
         <div class="panel-icon">🎮</div>
         <div class="panel-title">Ready for your<br><strong>next level?</strong></div>
         <div class="panel-bottom"><span>GAME • VOUCHER • DIGITAL</span><span>SG / 2027</span></div>
@@ -90,12 +107,14 @@
         <input id="gameSearch" type="search" placeholder="Cari game..." data-placeholder-id="Cari game..." data-placeholder-en="Search games..." aria-label="Cari game">
       </label>
     </div>
+    
     <div class="category-row" id="categoryRow">
       <button class="chip active" data-category="Semua" data-id="Semua" data-en="All">Semua</button>
       <button class="chip" data-category="Mobile" data-id="Mobile" data-en="Mobile">Mobile</button>
       <button class="chip" data-category="PC" data-id="PC" data-en="PC">PC</button>
       <button class="chip" data-category="Voucher" data-id="Voucher" data-en="Voucher">Voucher</button>
     </div>
+
     <div class="game-grid" id="gameGrid">
       <article class="game-card" data-name="Mobile Legends" data-category="Mobile">
         <div class="game-art art-ml"><span>ML</span><small>MOBILE LEGENDS</small></div>
@@ -122,6 +141,7 @@
         <div class="game-info"><div><h3>Google Play</h3><p>Gift Card</p></div><span class="card-arrow">↗</span></div>
       </article>
     </div>
+
     <p class="empty-state" id="emptyState" data-id="Game tidak ditemukan. Coba kata kunci lain." data-en="Game not found. Try another keyword." hidden>Game tidak ditemukan. Coba kata kunci lain.</p>
     <p class="demo-note" data-id="Katalog ini masih berupa demo frontend. Produk, nominal, harga, dan transaksi akan dihubungkan ke backend nantinya." data-en="This catalog is a frontend demo. Products, prices, and transactions will be connected to the backend later.">Katalog ini masih berupa demo frontend. Produk, nominal, harga, dan transaksi akan dihubungkan ke backend nantinya.</p>
   </section>
@@ -162,33 +182,23 @@
       <p class="section-intro" data-id="Beberapa hal yang mungkin ingin kamu ketahui." data-en="Some things you might want to know.">Beberapa hal yang mungkin ingin kamu ketahui.</p>
       <div class="faq-list">
         <details>
-          <summary>
-            <span data-id="Bagaimana cara melakukan top up?" data-en="How to top up?">Bagaimana cara melakukan top up?</span><span>＋</span>
-          </summary>
+          <summary><span data-id="Bagaimana cara melakukan top up?" data-en="How to top up?">Bagaimana cara melakukan top up?</span><span>＋</span></summary>
           <p data-id="Pilih game, tentukan nominal, isi User ID/Zone ID jika diperlukan, lalu ikuti instruksi checkout. Fitur transaksi akan aktif setelah backend terintegrasi." data-en="Select game, choose amount, fill User ID/Zone ID if needed, then follow checkout instructions. Transaction features will be active after backend integration.">Pilih game, tentukan nominal, isi User ID/Zone ID jika diperlukan, lalu ikuti instruksi checkout. Fitur transaksi akan aktif setelah backend terintegrasi.</p>
         </details>
         <details>
-          <summary>
-            <span data-id="Berapa lama pesanan diproses?" data-en="How long does order processing take?">Berapa lama pesanan diproses?</span><span>＋</span>
-          </summary>
+          <summary><span data-id="Berapa lama pesanan diproses?" data-en="How long does order processing take?">Berapa lama pesanan diproses?</span><span>＋</span></summary>
           <p data-id="Waktu proses bergantung pada produk, supplier, dan status pembayaran. Estimasi resmi akan ditampilkan setelah sistem transaksi aktif." data-en="Processing time depends on the product, supplier, and payment status. Official estimates will be shown once the transaction system is active.">Waktu proses bergantung pada produk, supplier, dan status pembayaran. Estimasi resmi akan ditampilkan setelah sistem transaksi aktif.</p>
         </details>
         <details>
-          <summary>
-            <span data-id="Bagaimana jika salah memasukkan User ID?" data-en="What if I enter the wrong User ID?">Bagaimana jika salah memasukkan User ID?</span><span>＋</span>
-          </summary>
+          <summary><span data-id="Bagaimana jika salah memasukkan User ID?" data-en="What if I enter the wrong User ID?">Bagaimana jika salah memasukkan User ID?</span><span>＋</span></summary>
           <p data-id="Segera hubungi admin sebelum pesanan diproses. Pastikan detail akun sudah benar sebelum menyelesaikan pembayaran." data-en="Contact admin immediately before the order is processed. Make sure account details are correct before completing payment.">Segera hubungi admin sebelum pesanan diproses. Pastikan detail akun sudah benar sebelum menyelesaikan pembayaran.</p>
         </details>
         <details>
-          <summary>
-            <span data-id="Bagaimana cara menghubungi admin?" data-en="How to contact admin?">Bagaimana cara menghubungi admin?</span><span>＋</span>
-          </summary>
+          <summary><span data-id="Bagaimana cara menghubungi admin?" data-en="How to contact admin?">Bagaimana cara menghubungi admin?</span><span>＋</span></summary>
           <p data-id="Hubungi admin melalui WhatsApp atau email yang tersedia pada bagian kontak." data-en="Contact admin via WhatsApp or email available in the contact section.">Hubungi admin melalui WhatsApp atau email yang tersedia pada bagian kontak.</p>
         </details>
         <details>
-          <summary>
-            <span data-id="Apakah pembayaran sudah otomatis?" data-en="Are payments automated?">Apakah pembayaran sudah otomatis?</span><span>＋</span>
-          </summary>
+          <summary><span data-id="Apakah pembayaran sudah otomatis?" data-en="Are payments automated?">Apakah pembayaran sudah otomatis?</span><span>＋</span></summary>
           <p data-id="Belum pada versi demo ini. Integrasi payment gateway dan webhook akan dibuat pada tahap backend." data-en="Not yet in this demo version. Payment gateway and webhook integration will be built in the backend stage.">Belum pada versi demo ini. Integrasi payment gateway dan webhook akan dibuat pada tahap backend.</p>
         </details>
       </div>
@@ -239,6 +249,7 @@
     <span data-id="SkyGaming · Digital Gaming Store" data-en="SkyGaming · Digital Gaming Store">SkyGaming · Digital Gaming Store</span>
   </div>
 </footer>
+
 <script src="app.js"></script>
 </body>
 </html>
