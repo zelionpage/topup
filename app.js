@@ -1,7 +1,7 @@
-// --- STATE & LOCALSTORAGE SETUP ---
+// --- STATE & LOCALSTORAGE SETUP (Default to Dark Mode) ---
 const htmlEl = document.documentElement;
 let currentLang = localStorage.getItem("sky_lang") || "id";
-let currentTheme = localStorage.getItem("sky_theme") || "light";
+let currentTheme = localStorage.getItem("sky_theme") || "dark"; // Default dark
 
 // Apply initial settings
 htmlEl.setAttribute("data-theme", currentTheme);
@@ -10,13 +10,13 @@ updateLanguageUI();
 // --- THEME TOGGLE ---
 const themeToggle = document.getElementById("themeToggle");
 themeToggle?.addEventListener("click", () => {
-  currentTheme = currentTheme === "light" ? "dark" : "light";
+  currentTheme = currentTheme === "dark" ? "light" : "dark";
   htmlEl.setAttribute("data-theme", currentTheme);
   localStorage.setItem("sky_theme", currentTheme);
-  themeToggle.textContent = currentTheme === "light" ? "🌙" : "☀️";
+  themeToggle.textContent = currentTheme === "dark" ? "☀️" : "🌙";
 });
 if (themeToggle) {
-  themeToggle.textContent = currentTheme === "light" ? "🌙" : "☀️";
+  themeToggle.textContent = currentTheme === "dark" ? "☀️" : "🌙";
 }
 
 // --- LANGUAGE TOGGLE ---
@@ -32,7 +32,7 @@ langToggle?.addEventListener("click", () => {
 function updateLanguageUI() {
   if (langLabel) langLabel.textContent = currentLang === "id" ? "EN" : "ID";
   
-  // Translate all elements with data-id / data-en
+  // Translate elements with data-id / data-en
   document.querySelectorAll("[data-id][data-en]").forEach(el => {
     el.innerHTML = el.getAttribute(`data-${currentLang}`);
   });
@@ -83,7 +83,7 @@ menuToggle?.addEventListener("click", () => {
 
 mobileNav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
   mobileNav.classList.remove("open");
-  menuToggle?.setAttribute("aria-expanded", "false");
+  menuToggle?.setAttribute("aria-expanded","false");
   if (menuToggle) menuToggle.textContent = "☰";
 }));
 
