@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b4e">
+  <meta name="description" content="SkyGaming — top up game favoritmu dengan mudah, cepat, dan nyaman.">
+  <title>SkyGaming — Top Up Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="SkyGaming beranda"><span class="brand-mark">S</span><span>Sky<span class="brand-blue">Gaming</span></span></a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a href="#games">Top Up</a><a href="#how">Cara Order</a><a href="#faq">FAQ</a><a href="#contact">Kontak</a>
+    </nav>
+    <div class="nav-actions"><a class="nav-help" href="#contact">Butuh bantuan?</a><button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button></div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav"><a href="#games">Top Up</a><a href="#how">Cara Order</a><a href="#faq">FAQ</a><a href="#contact">Kontak</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="status-dot"></span> DIGITAL GAMING STORE</span>
+        <h1>Top up game favoritmu, <span>lebih simpel.</span></h1>
+        <p>Temukan kebutuhan gaming kamu di satu tempat. Pilih game, tentukan nominal, lalu lanjutkan pesanan dengan mudah.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#games">Jelajahi game <span>→</span></a><a class="btn btn-quiet" href="#how">Cara order</a></div>
+        <div class="trust-row"><span>✓ Proses praktis</span><span>✓ Bantuan admin</span><span>✓ Tampilan transparan</span></div>
+      </div>
+      <div class="hero-panel" aria-label="Ilustrasi promosi SkyGaming">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="panel-top"><span class="mini-label">SKYGAMING STORE</span><span class="live-pill">● ONLINE</span></div>
+        <div class="panel-icon">🎮</div>
+        <div class="panel-title">Ready for your<br><strong>next level?</strong></div>
+        <div class="panel-bottom"><span>GAME • VOUCHER • DIGITAL</span><span>SG / 2027</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container feature-strip" aria-label="Keunggulan">
+    <div><span class="feature-icon">✦</span><span><b>Simple ordering</b><small>Alur pemesanan ringkas</small></span></div>
+    <div><span class="feature-icon">⌁</span><span><b>Helpful support</b><small>Admin siap membantu</small></span></div>
+    <div><span class="feature-icon">◈</span><span><b>Clear information</b><small>Detail produk mudah dipahami</small></span></div>
+  </section>
+
+  <section class="section container" id="games">
+    <div class="section-heading">
+      <div><span class="eyebrow">PILIH KEBUTUHANMU</span><h2>Game populer</h2><p>Pilih game untuk melihat pilihan top up yang tersedia.</p></div>
+      <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="Cari game..." aria-label="Cari game"></label>
+    </div>
+    <div class="category-row" id="categoryRow"><button class="chip active" data-category="Semua">Semua</button><button class="chip" data-category="Mobile">Mobile</button><button class="chip" data-category="PC">PC</button><button class="chip" data-category="Voucher">Voucher</button></div>
+    <div class="game-grid" id="gameGrid">
+      <article class="game-card" data-name="Mobile Legends" data-category="Mobile" data-emoji="⚔️"><div class="game-art art-ml"><span>ML</span><small>MOBILE LEGENDS</small></div><div class="game-info"><div><h3>Mobile Legends</h3><p>Diamond</p></div><span class="card-arrow">↗</span></div></article>
+      <article class="game-card" data-name="Free Fire" data-category="Mobile" data-emoji="🔥"><div class="game-art art-ff"><span>FF</span><small>FREE FIRE</small></div><div class="game-info"><div><h3>Free Fire</h3><p>Diamond</p></div><span class="card-arrow">↗</span></div></article>
+      <article class="game-card" data-name="PUBG Mobile" data-category="Mobile" data-emoji="🎯"><div class="game-art art-pubg"><span>PUBG</span><small>BATTLEGROUNDS</small></div><div class="game-info"><div><h3>PUBG Mobile</h3><p>Unknown Cash (UC)</p></div><span class="card-arrow">↗</span></div></article>
+      <article class="game-card" data-name="Genshin Impact" data-category="PC" data-emoji="✨"><div class="game-art art-genshin"><span>GI</span><small>GENSHIN IMPACT</small></div><div class="game-info"><div><h3>Genshin Impact</h3><p>Genesis Crystal</p></div><span class="card-arrow">↗</span></div></article>
+      <article class="game-card" data-name="Valorant" data-category="PC" data-emoji="◇"><div class="game-art art-valorant"><span>V</span><small>VALORANT</small></div><div class="game-info"><div><h3>Valorant</h3><p>Points</p></div><span class="card-arrow">↗</span></div></article>
+      <article class="game-card" data-name="Google Play" data-category="Voucher" data-emoji="▶"><div class="game-art art-voucher"><span>GP</span><small>GIFT CARD</small></div><div class="game-info"><div><h3>Google Play</h3><p>Gift Card</p></div><span class="card-arrow">↗</span></div></article>
+    </div>
+    <p class="empty-state" id="emptyState" hidden>Game tidak ditemukan. Coba kata kunci lain.</p>
+    <p class="demo-note">Katalog ini masih berupa demo frontend. Produk, nominal, harga, dan transaksi akan dihubungkan ke backend nantinya.</p>
+  </section>
+
+  <section class="how-section" id="how"><div class="container">
+    <div class="section-heading centered"><div><span class="eyebrow">MUDAH DALAM 3 LANGKAH</span><h2>Cara order</h2><p>Alur sederhana untuk memulai pesananmu.</p></div></div>
+    <div class="steps-grid"><div class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Pilih game</h3><p>Cari dan pilih game atau produk digital yang kamu inginkan.</p></div><div class="step-card"><span class="step-number">02</span><div class="step-icon">▤</div><h3>Isi detail pesanan</h3><p>Masukkan data akun dan pilih nominal sesuai kebutuhan.</p></div><div class="step-card"><span class="step-number">03</span><div class="step-icon">✓</div><h3>Selesaikan pembayaran</h3><p>Ikuti instruksi pembayaran dan pantau status pesananmu.</p></div></div>
+  </div></section>
+
+  <section class="section container faq-contact" id="faq">
+    <div class="faq-column"><span class="eyebrow">PUSAT BANTUAN</span><h2>Pertanyaan umum</h2><p class="section-intro">Beberapa hal yang mungkin ingin kamu ketahui.</p>
+      <div class="faq-list">
+        <details><summary>Bagaimana cara melakukan top up?<span>＋</span></summary><p>Pilih game, tentukan nominal, isi User ID/Zone ID jika diperlukan, lalu ikuti instruksi checkout. Fitur transaksi akan aktif setelah backend terintegrasi.</p></details>
+        <details><summary>Berapa lama pesanan diproses?<span>＋</span></summary><p>Waktu proses bergantung pada produk, supplier, dan status pembayaran. Estimasi resmi akan ditampilkan setelah sistem transaksi aktif.</p></details>
+        <details><summary>Bagaimana jika salah memasukkan User ID?<span>＋</span></summary><p>Segera hubungi admin sebelum pesanan diproses. Pastikan detail akun sudah benar sebelum menyelesaikan pembayaran.</p></details>
+        <details><summary>Bagaimana cara menghubungi admin?<span>＋</span></summary><p>Hubungi admin melalui WhatsApp atau email yang tersedia pada bagian kontak.</p></details>
+        <details><summary>Apakah pembayaran sudah otomatis?<span>＋</span></summary><p>Belum pada versi demo ini. Integrasi payment gateway dan webhook akan dibuat pada tahap backend.</p></details>
+      </div>
+    </div>
+    <aside class="contact-card" id="contact"><span class="eyebrow">KAMI SIAP MEMBANTU</span><h2>Ada yang bisa kami bantu?</h2><p>Hubungi admin SkyGaming untuk pertanyaan, bantuan pesanan, atau informasi lebih lanjut.</p>
+      <a class="contact-link" href="https://wa.me/6287716630959" target="_blank" rel="noopener"><span class="contact-symbol">◉</span><span><b>WhatsApp Admin</b><small>Chat langsung dengan admin</small></span><span class="contact-arrow">↗</span></a>
+      <a class="contact-link" href="mailto:one.lieszx@gmail.com"><span class="contact-symbol">✉</span><span><b>Email</b><small>one.lieszx@gmail.com</small></span><span class="contact-arrow">↗</span></a>
+      <div class="contact-foot">Jam respons admin dapat berbeda. Sertakan nomor pesanan jika menghubungi terkait transaksi.</div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand"><a class="brand brand-light" href="index.html"><span class="brand-mark">S</span><span>Sky<span class="brand-blue">Gaming</span></span></a><p>Tempat praktis untuk kebutuhan gaming dan produk digital favoritmu.</p><span class="footer-tag">PLAY MORE. WORRY LESS.</span></div>
+    <div class="footer-links"><h4>Informasi</h4><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="blog/">Blog</a><a href="faq.html">FAQ</a></div>
+    <div class="footer-links"><h4>Layanan lainnya</h4><a href="tools/">Other Tools</a><a href="whatsapp-bot/">WhatsApp Bot</a><a href="https://www.hostinginzel.my.id" target="_blank" rel="noopener">Website Developer ↗</a><a href="#contact">Contact Admin</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2027 <a href="https://www.hostinginzel.my.id" target="_blank" rel="noopener">SkyGhostID</a>. All rights reserved.</span><span>SkyGaming · Digital Gaming Store</span></div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
